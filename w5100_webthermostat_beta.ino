@@ -365,7 +365,7 @@ if (stare == 0) {
 }
 if (stare == 1) {
            led0 = 1;
-           digitalWrite(led, LOW);
+           digitalWrite(led, HIGH);
 }
 
 if ((stare == 2) || (stare0 == 2))
