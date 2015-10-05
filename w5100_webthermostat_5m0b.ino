@@ -1,12 +1,12 @@
 /*
- Created by Rui Santos
+ base sketch created by Rui Santos
  Visit: http://randomnerdtutorials.com for more arduino projects
  Modified by Nicu Florica aka niq_ro
  visit http://nicuflorica.blogspot.ro/
  or http://arduinotehniq.blogspot.com
  or http://www.tehnic.go.ro
 
- Arduino with Ethernet Shield
+ Arduino Thermostat with Ethernet Shield
  */
 
 #include <SPI.h>
