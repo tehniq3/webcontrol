@@ -5,7 +5,6 @@
  visit http://nicuflorica.blogspot.ro/
  or http://arduinotehniq.blogspot.com
  or http://www.tehnic.go.ro
-
  Arduino Thermostat with Ethernet Shield
  */
 
@@ -144,12 +143,12 @@ void loop() {
                 client.println("h1");
               client.println("{");
               client.println("text-align: center;");
-              client.println("font-family:Arial, "Trebuchet MS", Helvetica, sans-serif;");
+              client.println("font-family:Arial, 'Trebuchet MS', Helvetica, sans-serif;");
               client.println("}");
                 client.println("h2");
               client.println("{");
               client.println("text-align: center;");
-              client.println("font-family:Arial, "Trebuchet MS", Helvetica, sans-serif;");
+              client.println("font-family:Arial, 'Trebuchet MS', Helvetica, sans-serif;");
               client.println("}");
                client.println("a");
               client.println("{");
@@ -164,7 +163,7 @@ void loop() {
               client.println("border-radius:10px 10px 10px;");
               client.println("-o-border-radius:10px 10px 10px;");
               client.println("-webkit-border-radius:10px 10px 10px;");
-              client.println("font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;");
+              client.println("font-family:'Trebuchet MS',Arial, Helvetica, sans-serif;");
               client.println("-moz-border-radius:10px 10px 10px;");
               client.println("background-color: #68a2d1;");
               client.println("padding:8px;");
@@ -255,7 +254,7 @@ EEPROM.write(149,teset0);
           EEPROM.write(151,dete);
          client.println("<meta http-equiv=\"refresh\" content=\"0; URL='http://tehniq.go.ro:8081/'\" />"); 
           }
-client.println("<H2>");      
+//client.println("<H2>");      
 client.println("<font color=orange>");    
 client.print("<p>Thermostat : ");
 client.print("temperature set = ");
@@ -376,8 +375,9 @@ stare0 = stare;
 clic1 = clic;
 // write state in internal eeprom 
 //EEPROM.write(102,stare0); 
-client.println("</font>");    
+client.println("</font>");
 
+  client.println("<font color=black>");
            client.print("<p>LED was on ");
            client.print(clic1);
            client.print(" times from last reboot !<p>");
@@ -389,8 +389,11 @@ client.println("</font>");
 //           client.println("<br />"); 
 //           client.println("Tested by Nicu Florica aka niq_ro. Visit <a href=http://www.tehnic.go.ro target=blank>http://www.tehnic.go.ro</a> & <a href=http://nicuflorica.blogspot.ro target=blank>http://nicuflorica.blogspot.ro/</a> for more projects!</p>");  
            client.println("Sketch by Nicu Florica aka niq_ro.");
-           client.println("Visit <a href=http://www.tehnic.go.ro target=blank>http://www.tehnic.go.ro</a> & <a href=http://nicuflorica.blogspot.ro target=blank>http://nicuflorica.blogspot.ro/</a> for more projects!</p>");  
-           client.println("<p />"); 
+           client.println("<p />");
+//           client.println("Visit <a href=http://www.tehnic.go.ro target=blank>http://www.tehnic.go.ro</a> & <a href=http://nicuflorica.blogspot.ro target=blank>http://nicuflorica.blogspot.ro/</a> for more projects!</p>");  
+          client.println("Visit <a href=http://www.tehnic.go.ro target=blank>http://www.tehnic.go.ro</a> for more projects!</p>");  
+           client.println("<p />");
+            client.println("<p />");
            client.println("<H5>");
            client.println("version. 5.0b / 05.10.2015<p>");
            client.println("</BODY>");
@@ -448,4 +451,3 @@ stare0 = stare;
 
 
 }   // end main loop
-
