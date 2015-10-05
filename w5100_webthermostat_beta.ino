@@ -210,7 +210,7 @@ client.print("temperature set = ");
 client.print(teset/10,1);
 client.print("<sup>o</sup>");
 client.print("C & ");
-client.print("hystesis = ");
+client.print("hysteresis = ");
 client.print(dete/10,1);
 client.print("<sup>o</sup>");
 client.print("C<p>");
